@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="app.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card Generator</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <!---->
+  <body>
+    <ul class="filterBar">
+      <li>
+        <label>Include Banner?</label>
+        <select id="selectBanner">
+          <!--<option value="undefined">Pick "Yes" or "No"</option>-->
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </li>
+      <li>
+        <label>Full Name</label>
+        <input
+          id="fullNameTextInput"
+          type="text"
+          placeholder="Enter your Name"
+        />
+      </li>
+      <li>
+        <label>Icons Position</label>
+        <select id="selectPosition">
+          <option value="position-left">Left</option>
+          <option value="position-right">Right</option>
+        </select>
+      </li>
+      <li>
+        <label>Github</label>
+        <input id="githubInput" type="text" />
+      </li>
+      <li>
+        <label>X</label>
+        <input id="xInput" type="text" />
+      </li>
+      <li>
+        <label>LinkedIn</label>
+        <input id="linkedinInput" type="text" />
+      </li>
+      <li>
+        <label>Instagram</label>
+        <input id="instagramInput" type="text" />
+      </li>
+      <li>
+        <label>Employment</label>
+        <select id="selectEmployment" for="employmentRole">
+          <option value="">Pick your Position</option>
+          <option value="Web Developer">Web Developer</option>
+          <option value="System Administrator">System Administrator</option>
+          <option value="Freelancer">Freelancer</option>
+        </select>
+      </li>
+      <li>
+        <label>City</label>
+        <select id="selectCity" for="city">
+          <option value="">Pick your City</option>
+          <option value="Miami">Miami</option>
+          <option value="Orlando">Orlando</option>
+          <option value="Jacksonville">Jacksonville</option>
+          <option value="Tampa">Tampa</option>
+        </select>
+      </li>
+      <li>
+        <label>County</label>
+        <select id="selectCounty">
+          <option value="">Pick your Corresponding County</option>
+          <option value="Miami-Dade County">Miami-Dade</option>
+          <option value="Orange County">Orange</option>
+          <option value="Duval County">Duval</option>
+          <option value="Hillsborough County">Hillsborough</option>
+        </select>
+      </li>
+    </ul>
+
+    <!---->
+    <span class="iconBar">
+      <ul class="socialMediaIconsContainer">
+        <li>
+          <a id="githubURL" href="https://github.com/" target="_blank">
+            <img
+            class="socialMediaIcons"
+            id="githubLogo"
+            src="icons8-github.svg"
+            alt="GitHub Logo"
+            />
+          </a>
+        </li>
+        <li>
+          <a id="xURL" href="https://x.com/" target="_blank">
+            <img
+              class="socialMediaIcons"
+              id="xLogo"
+              src="icons8-twitterx.svg"
+              alt="X or Twitter Logo"
+            />
+          </a>
+        </li>
+        <li>
+          <a id="linkedinURL" href="https://www.linkedin.com/" target="_blank">
+            <img
+              class="socialMediaIcons"
+              id="linkedInLogo"
+              src="icons8-linkedin.svg"
+              alt="Linkedin Logo"
+            />
+          </a>
+        </li>
+        <li>
+          <a id="instagramURL" href="https://www.instagram.com/" target="_blank">
+            <img
+              class="socialMediaIcons"
+              id="instagramLogo"
+              src="icons8-instagram.svg"
+              alt="Instagram Logo"
+            />
+          </a>
+        </li>
+      </ul>
+    </span>
+    <div class="portfolioContainer">
+      <div class="container">
+        <div class="profilePictureAndBanner">
+          <img id="banner" />
+          <img id="profilePicture" />
+        </div>
+        <br />
+        <div class="bioContainer">
+          <h1>Full Name</h1>
+          <h2>Employment</h2>
+          <h3>City</h3>
+          <h4>County</h4>
+        </div>
+      </div>
+    </div>
+   
+  </body>
+</html>
